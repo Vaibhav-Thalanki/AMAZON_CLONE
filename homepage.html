@@ -1,277 +1,352 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <title></title>
+    <meta charset="utf-8" />
+    <title>Home Page</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <div id="nav-1">
-      <img src="" alt="logo">
-      <button type="button" name="delivery">Deliver to <b>Slovakia</b></button>
-      <div class="searchBar">
-      <input type="text" name="" value="">
-      <button type="button" name="button"><img src="" alt="search"></button>
-      </div>
-      <button type="button" name="cart"><img src="" alt="cart"></button>
-    </div>
-    <div class="" id="nav-2">
-      <ul>
-        <li>Today's Deals</li>
-        <li>Customer Service</li>
-        <li>Registry</li>
-        <li>Gift Cards</li>
-        <li>Sell</li>
-      </ul>
-    </div>
-    <div class="background">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="container-lg">
+          <a href="category.html" class="navbar-brand">
+            <img src="./assets/logo.png" alt="" height="100" width="100" />
+            <span class="ms-3 fw-bold ">SHOP</span>
+          </a>
 
-    </div>
-    <div class="categories">
-      <div class="gaming">
-        <img src="" alt="headset">
-        <img src="" alt="keyboards">
-        <img src="" alt="computer mice">
-        <img src="" alt="chairs">
-        <button type="button" name="button">See more</button>
-      </div>
-      <div class="healthCare">
-        <img src="" alt="">
-        <button type="button" name="button">Shop now</button>
-      </div>
-      <div class="byCategory">
-        <img src="" alt="computers accessories">
-        <img src="" alt="toys/games">
-        <img src="" alt="video games">
-        <img src="" alt="baby monitor">
-        <button type="button" name="button">Shop now</button>
-      </div>
-      <div class="amazon-basics">
-        <img src="" alt="">
-        <button type="button" name="button">See more</button>
-      </div>
-      <div class="">
-        <img src="" alt="beauty picks">
-        <button type="button" name="button">Shop now</button>
-      </div>
-      <div class="deals">
-        <img src="" alt="">
-        <button type="button" name="button">See all deals</button>
-      </div>
-      <div class="electronics">
-        <img src="" alt="">
-        <button type="button" name="button">See all deals</button>
-      </div>
-    </div>
-    <div class="popularProducts">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-    </div>
-    <div class="international-sellers">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-    </div>
-    <div class="">
-      <div id="">
-        <h3>Comfy Styles for Her</h3>
-        <div class="">
-        <img src="" alt="">
-        <figcaption>Sweatshirts</figcaption>
-        <img src="" alt="">
-        <figcaption>Joggers</figcaption>
-        <img src="" alt="">
-        <figcaption>Cardigans</figcaption>
-        <img src="" alt="">
-        <figcaption>Easy tees</figcaption>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-target="#collapsethis"
+            data-bs-toggle="collapse"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="collapsethis"
+          >
+            <ul class="navbar-nav align-items-center">
+              <li class="nav-item">
+                <a href="#" class="nav-link active">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link ">CATEGORIES</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">CART</a>
+              </li>
+              <li class="d-none d-lg-block nav-item" id="search-bar">
+        
+                <input type="text" name="" value="" placeholder="Search.."/>
+                <button type="button" name="button"><img src="./assets/search.png" alt="" height="20px" width="20px"/></button>
+              </li>
+            </ul>
+          </div>
         </div>
-        <button type="button" name="button">See more</button>
+      </nav>
+      <div class="py-3 container-fluid d-lg-none text-end align-items-center " id="search-bar-out">
+        <span>Powered by Team 2</span>
+        <input type="text" name="" value="" placeholder="Search.."/>
+        <button type="button" name="button"><img src="./assets/search.png" alt="" height="25px" width="25px"/></button><br>
+        <img src="./assets/location.png" alt="" height="20px"/>
+        <p>Deliver to <b>Slovakia</b></p>
       </div>
-      <div class="">
-        <h3>New Arrivals in Toys</h3>
-        <img src="" alt="">
-        <button type="button" name="button">Shop now</button>
+      <div class="py-3 container-fluid d-none d-lg-block text-end align-items-center " id="search-bar-out">
+        <span>Powered by Team 2</span>
+        <img src="./assets/location.png" alt="" height="20px"/>
+        <p id="out2">Deliver to <b>Slovakia</b></p>
       </div>
-      <div class="">
-        <h3>International Top Sellers in Kitchen</h3>
-        <img src="" alt="">
+    </header>
+
+    <div class="container-md" id="mainContent">
+  
+      <div class="row">
+        
+        <section class="col-12 home-tile" id="tile1">
+          <a href="./category.html">
+            <img src="./assets/todays-deals.jpg" alt="" width="100%">
+          <span>Today's Deals</span>
+          </a>
+        </section>
+        <section class="col-md-6 home-tile" id="tile1">
+          <a href="./category.html">
+            <img src="./assets/todays-deals.jpg" alt="" width="100%">
+          <span>Clothing</span>
+          </a>
+        </section>
+        <section class="col-md-6 home-tile" id="tile1">
+          <a href="./category.html">
+            <img src="./assets/todays-deals.jpg" alt="" width="100%">
+          <span>Accessories</span>
+          </a>
+        </section>
+        <section class="col-12 home-tile" id="tile1">
+          <a href="./category.html">
+            <img src="./assets/todays-deals.jpg" alt="" width="100%">
+          <span>Beauty Picks</span>
+          </a>
+        </section>
+        
+        
       </div>
-      <div class="">
-        <h3>Kindle E readers</h3>
-        <img src="" alt="">
-        <button type="button" name="button">Shop now</button>
-      </div>
-      <div class="scroll-images" id="books">
-        <h3>Top Sellers in Books for you</h3>
-        <div class="image-container">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
+      <div class="categories">
+        <div class="gaming">
+          <img src="" alt="headset" />
+          <img src="" alt="keyboards" />
+          <img src="" alt="computer mice" />
+          <img src="" alt="chairs" />
+          <button type="button" name="button">See more</button>
         </div>
-      </div>
-      <div class="scroll-images" id="int-pc-products">
-        <h3>Popular producst in PC internationally</h3>
-        <div class="image-container">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        </div>
-      </div>
-      <div class="4section-gallery">
-        <div class="">
-          <h3>Shop Pet Supplies</h3>
-          <img src="" alt="">
+        <div class="healthCare">
+          <img src="" alt="" />
           <button type="button" name="button">Shop now</button>
         </div>
+        <div class="byCategory">
+          <img src="" alt="computers accessories" />
+          <img src="" alt="toys/games" />
+          <img src="" alt="video games" />
+          <img src="" alt="baby monitor" />
+          <button type="button" name="button">Shop now</button>
+        </div>
+        <div class="amazon-basics">
+          <img src="" alt="" />
+          <button type="button" name="button">See more</button>
+        </div>
         <div class="">
-          <h3>Gaming Merchandise</h3>
+          <img src="" alt="beauty picks" />
+          <button type="button" name="button">Shop now</button>
+        </div>
+        <div class="deals">
+          <img src="" alt="" />
+          <button type="button" name="button">See all deals</button>
+        </div>
+        <div class="electronics">
+          <img src="" alt="" />
+          <button type="button" name="button">See all deals</button>
+        </div>
+      </div>
+  
+      <div class="popularProducts">
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+      </div>
+      <div class="international-sellers">
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+      </div>
+      <div class="">
+        <div id="">
+          <h3>Comfy Styles for Her</h3>
           <div class="">
-          <img src="" alt="">
-          <figcaption>Apparel</figcaption>
-          <img src="" alt="">
-          <figcaption>Hats</figcaption>
-          <img src="" alt="">
-          <figcaption>Action Figures</figcaption>
-          <img src="" alt="">
-          <figcaption>Mugs</figcaption>
+            <img src="" alt="" />
+            <figcaption>Sweatshirts</figcaption>
+            <img src="" alt="" />
+            <figcaption>Joggers</figcaption>
+            <img src="" alt="" />
+            <figcaption>Cardigans</figcaption>
+            <img src="" alt="" />
+            <figcaption>Easy tees</figcaption>
           </div>
+          <button type="button" name="button">See more</button>
+        </div>
+        <div class="">
+          <h3>New Arrivals in Toys</h3>
+          <img src="" alt="" />
           <button type="button" name="button">Shop now</button>
         </div>
-        <div class="view-gallery">
-          <h3>Popular Products in Wireless internationally</h3>
-          <div class="visual">
-          </div>
-          <div class="miniature-images">
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
+        <div class="">
+          <h3>International Top Sellers in Kitchen</h3>
+          <img src="" alt="" />
+        </div>
+        <div class="">
+          <h3>Kindle E readers</h3>
+          <img src="" alt="" />
+          <button type="button" name="button">Shop now</button>
+        </div>
+        <div class="scroll-images" id="books">
+          <h3>Top Sellers in Books for you</h3>
+          <div class="image-container">
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
           </div>
         </div>
-        <div class="view-gallery">
-          <h3>Top Sellers in Toys for you</h3>
-          <div class="visual">
+        <div class="scroll-images" id="int-pc-products">
+          <h3>Popular producst in PC internationally</h3>
+          <div class="image-container">
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
           </div>
-          <div class="miniature-images">
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
+        </div>
+        <div class="4section-gallery">
+          <div class="">
+            <h3>Shop Pet Supplies</h3>
+            <img src="" alt="" />
+            <button type="button" name="button">Shop now</button>
+          </div>
+          <div class="">
+            <h3>Gaming Merchandise</h3>
+            <div class="">
+              <img src="" alt="" />
+              <figcaption>Apparel</figcaption>
+              <img src="" alt="" />
+              <figcaption>Hats</figcaption>
+              <img src="" alt="" />
+              <figcaption>Action Figures</figcaption>
+              <img src="" alt="" />
+              <figcaption>Mugs</figcaption>
+            </div>
+            <button type="button" name="button">Shop now</button>
+          </div>
+          <div class="view-gallery">
+            <h3>Popular Products in Wireless internationally</h3>
+            <div class="visual"></div>
+            <div class="miniature-images">
+              <img src="" alt="" />
+              <img src="" alt="" />
+              <img src="" alt="" />
+              <img src="" alt="" />
+            </div>
+          </div>
+          <div class="view-gallery">
+            <h3>Top Sellers in Toys for you</h3>
+            <div class="visual"></div>
+            <div class="miniature-images">
+              <img src="" alt="" />
+              <img src="" alt="" />
+              <img src="" alt="" />
+              <img src="" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="scroll-images" id="books">
+          <h3>Top Sellers in Baby Products for you</h3>
+          <div class="image-container">
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
           </div>
         </div>
       </div>
-      <div class="scroll-images" id="books">
-        <h3>Top Sellers in Baby Products for you</h3>
-        <div class="image-container">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        </div>
+      <div class="">
+        <p>Back to top</p>
       </div>
     </div>
-    <div class="">
-      <p>Back to top</p>
+    
+    <footer class="m-0 pb-3" id="home-footer">
+      <div class="container">
+          <div class="row">
+              <section class="col-12" id="backtotop">
+                  <a href="#collapsethis"><p>Back to Top</p></a>
+              </section>
+              <section id="foot1" class="col-md-4">
+               
+                      <span class="h5">Get to know us</span> <br> <br>
+                      <ul>
+                          <a href="https://www.blogger.com/about/"><li>Blogs</li></a>
+                          <a href="https://www.aboutamazon.com/?utm_source=gateway&utm_medium=footer"><li>About</li></a>
+                          <a href="https://www.amazon.in/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM"><li>Terms and Conditions</li></a>
+                          <a href="https://aws.amazon.com/"><li>Services</li></a>
+                          <a href="https://sellercentral.amazon.in/gp/help/external/G200444420?language=en_IN"><li>Report issues</li></a>
+                      </ul>
+                  
+                  <hr class="d-md-none m-auto">
+              </section>
+              <section id="foot2" class="col-md-5">
+              
+                  <span class="h5 "> Main Address</span> <br>
+                  <p class="mt-4">Eiffel Tower, Paris <br>
+                      France <br>
+                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni unde, quis ab a iust fugiat.</p>  
+                  <hr class="d-md-none m-auto">
+              </section>
+              <section id="foot1" class="col-md-3 ps-5">
+               
+                  <span class="h5">Connect with us</span> <br> <br>
+                  <ul>
+                      <a href=""><li>
+                          <img src="./assets/insta.png" alt="" height="20px" width="20px"> Instagram</li></a>
+                      <a href=""><li>
+                          <img src="./assets/twitter.png" alt="" height="25px" width="25px" > Twitter</li></a>
+                      <a href=""><li>
+                          <img src="./assets/facebook.png" alt="" height="25px" width="25px"> Facebook</li></a>
+                  </ul>
+              
+              <hr class="d-md-none m-auto">
+          </section>
+              
+          </div>
+          <div class="text-center mt-5">
+              <p>&copy; Certified Store</p> 
+              <p>Powered by Team 2</p>
+           </div>
+        </div>
     </div>
-    <footer>
-      <div class="footer-lists">
-        <h4>Get to Know us</h4>
-      <ul>
-        <li>Careers</li>
-        <li>Blog</li>
-        <li>About Amazon</li>
-        <li>Investor Relations</li>
-        <li>Amazon Devices</li>
-        <li>Amazon Science</li>
-      </ul>
-      </div>
-      <div class="footer-lists">
-        <h4>Make Money With Us</h4>
-      <ul>
-        <li>Sell products on Amazon</li>
-        <li>Sell on Amazon Business</li>
-        <li>Sell apps on Amazon</li>
-        <li>Become an Affiliate</li>
-        <li>Advertise Your Products</li>
-        <li>Self-Publish with Us</li>
-        <li>Host an Amazon Hub</li>
-        <li>See More Make Money with Us</li>
-      </ul>
-      </div>
-      <div class="footer-lists">
-        <h4>Amazon Payment Products</h4>
-      <ul>
-        <li>Amazon Business Card</li>
-        <li>Shop with Points</li>
-        <li>Reload Your Balance</li>
-        <li>Amazon Currency Converter</li>
-      </ul>
-      </div>
-      <div class="footer-lists">
-        <h4>Let Us Help You</h4>
-      <ul>
-        <li>Amazon and Covid-19</li>
-        <li>Your Account</li>
-        <li>Your Orders</li>
-        <li>Shipping Rates & Policies</li>
-        <li>Returns & Replacements</li>
-        <li>Manage Your Content and Devices</li>
-        <li>Amazon Assistant</li>
-        <li>Help</li>
-      </ul>
-      </div>
-      <div class="copyright">
-        <ul>
-          <li>Conditions of Use</li>
-          <li>Privacy Notice</li>
-          <li>Interest-Based Ads</li>
-          <li>1996-2022, Amazon.com, Inc. or its affiliates</li>
-        </ul>
-      </div>
-    </footer>
+      
+  </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

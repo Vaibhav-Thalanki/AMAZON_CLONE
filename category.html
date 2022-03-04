@@ -21,11 +21,11 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
         <div class="container-lg">
           <a href="category.html" class="navbar-brand">
             <img src="./assets/logo.png" alt="" height="100" width="100" />
-            <span class="ms-3 fw-bold text-secondary">CATEGORIES</span>
+            <span class="ms-3 fw-bold ">SHOP</span>
           </a>
 
           <button
@@ -42,22 +42,37 @@
           >
             <ul class="navbar-nav align-items-center">
               <li class="nav-item">
-                <a href="#" class="nav-link">HOME</a>
+                <a href="#" class="nav-link active">HOME</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link active">CATEGORIES</a>
+                <a href="#" class="nav-link ">CATEGORIES</a>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">CART</a>
               </li>
-              <li class="d-none d-lg-block nav-item">
-                <a href="#" class="btn btn-secondary">Buy now</a>
+              <li class="d-none d-lg-block nav-item" id="search-bar">
+        
+                <input type="text" name="" value="" placeholder="Search.."/>
+                <button type="button" name="button"><img src="./assets/search.png" alt="" height="20px" width="20px"/></button>
               </li>
             </ul>
           </div>
         </div>
       </nav>
+      <div class="py-3 container-fluid d-lg-none text-end align-items-center " id="search-bar-out">
+        <span>Powered by Team 2</span>
+        <input type="text" name="" value="" placeholder="Search.."/>
+        <button type="button" name="button"><img src="./assets/search.png" alt="" height="25px" width="25px"/></button><br>
+        <img src="./assets/location.png" alt="" height="20px"/>
+        <p>Deliver to <b>Slovakia</b></p>
+      </div>
+      <div class="py-3 container-fluid d-none d-lg-block text-end align-items-center " id="search-bar-out">
+        <span>Powered by Team 2</span>
+        <img src="./assets/location.png" alt="" height="20px"/>
+        <p id="out2">Deliver to <b>Slovakia</b></p>
+      </div>
     </header>
+    
     <div class="container-md" id="mainContent">
       <div class="row justify-content-center">
         <section class="col-lg-3 col-md-4">
