@@ -50,6 +50,29 @@ a.active {
 a.nav-link:hover {
   font-size: 1.3em;
 }
+
+#hiddenCollapse {
+  display: none !important;
+  position: absolute;
+  min-width: 158px;
+  z-index: 1;
+}
+
+
+/*  ---- code to collapse category submenu, not working
+.main-category:hover #hiddenCollapse {
+  display: block !important;
+}
+
+#hiddenCollapse a:hover {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+#collapsethis: hover .main-category {
+  background-color: transparent;
+}
+ */
 /* HOME PAGE  */
 .home-tile a,
 .home-tile a:hover {
@@ -83,6 +106,55 @@ a.nav-link:hover {
   transform: scale(1) translateY(-15px);
   box-shadow: 5px 10px 18px #888888;
 }
+
+/*  puffyfish edits */
+.body-categories {
+height: inherit;
+padding: 40px 0px;
+display: grid;
+gap: 30px 30px;
+grid-template-columns: auto auto auto auto;
+}
+
+.ind-category {
+  height: 300px;
+  padding: 20px;
+  background-color: lightblue;
+}
+
+.ind-category h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.ind-category a {
+  font-size: 0.7rem;
+  text-decoration: none;
+  color: #F72585;
+}
+
+.category-body {
+  height: 220px;
+}
+
+.horizontal-scroll {
+  padding: 40px 20px;
+  background-color: grey;
+  margin: 40px 0;
+  max-width: 100%;
+}
+
+.horizontal-scroll h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.image-container {
+  max-width: 100%;
+  display: flex;
+}
+
+/* end of puffyfish edits */
 
 /* CATEGORY PAGE */
 .cat-tile {

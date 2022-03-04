@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>Home Page</title>
+    <script src="https://use.fontawesome.com/7fd8f92be1.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
@@ -41,13 +42,30 @@
                 <a href="#" class="nav-link active">HOME</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link ">CATEGORIES</a>
+        <!-- edited, added collapse navbar-collapse to a.
+              added ul and li with class nav-item -->
+                <a href="#" class="nav-link main-category">CATEGORIES</a>
+                <div id="hiddenCollapse">
+                    <a href="#" class="hidden-category">Arts and Crafts</a>
+                    <a href="#" class="hidden-category">Automotive</a>
+                    <a href="#" class="hidden-category">Baby</a>
+                    <a href="#" class="hidden-category">Beauty and Personal Care</a>
+                    <a href="#" class="hidden-category">Books</a>
+                    <a href="#" class="hidden-category">Electronics</a>
+                    <a href="#" class="hidden-category">Home and Kitchen</a>
+                    <a href="#" class="hidden-category">Women's Fashion</a>
+                    <a href="#" class="hidden-category">Men's Fashion</a>
+                    <a href="#" class="hidden-category">Children's Fashion</a>
+                    <a href="#" class="hidden-category">Music, CDs and Vinyl</a>
+              </div></li>
+
+        <!-- edits end here -->
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">CART</a>
+                <a href="#" class="nav-link"><i class="fa fa-cart-plus"></i> CART</a>
               </li>
               <li class="d-none d-lg-block nav-item" id="search-bar">
-        
+
                 <input type="text" name="" value="" placeholder="Search.."/>
                 <button type="button" name="button"><img src="./assets/search.png" alt="" height="20px" width="20px"/></button>
               </li>
@@ -70,9 +88,9 @@
     </header>
 
     <div class="container-md" id="mainContent">
-  
+
       <div class="row">
-        
+
         <section class="col-12 home-tile" id="tile1">
           <a href="./category.html">
             <img src="./assets/todays-deals.jpg" alt="" width="100%">
@@ -97,47 +115,79 @@
           <span>Beauty Picks</span>
           </a>
         </section>
-        
-        
       </div>
-      <div class="categories">
-        <div class="gaming">
+
+<!-- start of gallery of categories -->
+      <div class="body-categories">
+        <div class="ind-category">
+          <h3>Gaming Accessories</h2>
+          <div class="category-body">
           <img src="" alt="headset" />
           <img src="" alt="keyboards" />
           <img src="" alt="computer mice" />
           <img src="" alt="chairs" />
-          <button type="button" name="button">See more</button>
+          </div>
+          <a href="#"></a>
+          <a href="#">See more</a>
         </div>
-        <div class="healthCare">
+        <div class="ind-category">
+          <h3>Shop by Category</h2>
+          <div class="category-body">
           <img src="" alt="" />
-          <button type="button" name="button">Shop now</button>
         </div>
-        <div class="byCategory">
+          <a href="#">Shop now</a>
+        </div>
+        <div class="ind-category">
+          <h3>Deals and Promotions</h2>
+          <div class="category-body">
           <img src="" alt="computers accessories" />
           <img src="" alt="toys/games" />
           <img src="" alt="video games" />
           <img src="" alt="baby monitor" />
-          <button type="button" name="button">Shop now</button>
         </div>
-        <div class="amazon-basics">
+          <a href="#">Shop now</a>
+        </div>
+        <div class="ind-category">
+          <h3>Amazon Basics</h2>
+          <div class="category-body">
           <img src="" alt="" />
-          <button type="button" name="button">See more</button>
         </div>
-        <div class="">
+          <a href="#">See more</a>
+        </div>
+        <div class="ind-category">
+          <h3>Health and Personal Care</h2>
+          <div class="category-body">
           <img src="" alt="beauty picks" />
-          <button type="button" name="button">Shop now</button>
         </div>
-        <div class="deals">
+          <a href="#">Shop now</a>
+        </div>
+        <div class="ind-category">
+          <h3>Deal of the Day</h2>
+          <div class="category-body">
           <img src="" alt="" />
-          <button type="button" name="button">See all deals</button>
         </div>
-        <div class="electronics">
+        <a href="#">See all deals</a>
+        </div>
+        <div class="ind-category">
+          <h3>New Arrivals in Toys</h3>
+          <div class="category-body">
           <img src="" alt="" />
-          <button type="button" name="button">See all deals</button>
+        </div>
+          <a href="#">Shop now</a>
+        </div>
+        <div class="ind-category">
+          <h3>Kindle E readers</h3>
+          <div class="category-body">
+          <img src="" alt="" />
+          </div>
+          <a href="#">Shop now</a>
         </div>
       </div>
-  
-      <div class="popularProducts">
+
+<!-- HORIZONTAL SCROLL OF PRODUCTS -->
+      <div class="horizontal-scroll" id="popular-products">
+        <h3>Popular Products in Beauty internationally</h2>
+        <div class="image-container">
         <img src="" alt="" />
         <img src="" alt="" />
         <img src="" alt="" />
@@ -151,7 +201,10 @@
         <img src="" alt="" />
         <img src="" alt="" />
       </div>
-      <div class="international-sellers">
+      </div>
+      <div class="horizontal-scroll" id="international-sellers">
+        <h3>International Top Sellers in Home</h2>
+        <div class="image-container">
         <img src="" alt="" />
         <img src="" alt="" />
         <img src="" alt="" />
@@ -165,7 +218,10 @@
         <img src="" alt="" />
         <img src="" alt="" />
       </div>
-      <div class="">
+    </div>
+
+<!-- NOT PART OF HORIZONTAL SCROLL GALLERY
+      <div class="horizontal-scroll" >
         <div id="">
           <h3>Comfy Styles for Her</h3>
           <div class="">
@@ -180,21 +236,10 @@
           </div>
           <button type="button" name="button">See more</button>
         </div>
-        <div class="">
-          <h3>New Arrivals in Toys</h3>
-          <img src="" alt="" />
-          <button type="button" name="button">Shop now</button>
-        </div>
-        <div class="">
-          <h3>International Top Sellers in Kitchen</h3>
-          <img src="" alt="" />
-        </div>
-        <div class="">
-          <h3>Kindle E readers</h3>
-          <img src="" alt="" />
-          <button type="button" name="button">Shop now</button>
-        </div>
-        <div class="scroll-images" id="books">
+
+END -->
+<!--CONT OF HORIZONTAL SCROLL -------->
+        <div class="horizontal-scroll" id="books">
           <h3>Top Sellers in Books for you</h3>
           <div class="image-container">
             <img src="" alt="" />
@@ -211,7 +256,7 @@
             <img src="" alt="" />
           </div>
         </div>
-        <div class="scroll-images" id="int-pc-products">
+        <div class="horizontal-scroll" id="int-pc-products">
           <h3>Popular producst in PC internationally</h3>
           <div class="image-container">
             <img src="" alt="" />
@@ -228,13 +273,15 @@
             <img src="" alt="" />
           </div>
         </div>
-        <div class="4section-gallery">
+
+<!-- -------------FOUR COLUMNS GALLERY------>
+        <div class="four-sections">
           <div class="">
             <h3>Shop Pet Supplies</h3>
             <img src="" alt="" />
             <button type="button" name="button">Shop now</button>
           </div>
-          <div class="">
+          <div class="four-sections">
             <h3>Gaming Merchandise</h3>
             <div class="">
               <img src="" alt="" />
@@ -248,7 +295,7 @@
             </div>
             <button type="button" name="button">Shop now</button>
           </div>
-          <div class="view-gallery">
+          <div class="four-sections">
             <h3>Popular Products in Wireless internationally</h3>
             <div class="visual"></div>
             <div class="miniature-images">
@@ -258,7 +305,7 @@
               <img src="" alt="" />
             </div>
           </div>
-          <div class="view-gallery">
+          <div class="four-sections">
             <h3>Top Sellers in Toys for you</h3>
             <div class="visual"></div>
             <div class="miniature-images">
@@ -269,7 +316,10 @@
             </div>
           </div>
         </div>
-        <div class="scroll-images" id="books">
+<!-- END OF FOUR COLUMNS GALLERY -->
+
+<!-- HORIZONTAL SCROLL  -------->
+        <div class="horizontal-scroll" id="books">
           <h3>Top Sellers in Baby Products for you</h3>
           <div class="image-container">
             <img src="" alt="" />
@@ -286,12 +336,10 @@
             <img src="" alt="" />
           </div>
         </div>
-      </div>
-      <div class="">
-        <p>Back to top</p>
-      </div>
-    </div>
-    
+
+<!-- END OF HORIZONTAL SCROLL -------->
+</div>
+<!-- FOOTER ---------------------->
     <footer class="m-0 pb-3" id="home-footer">
       <div class="container">
           <div class="row">
@@ -299,7 +347,7 @@
                   <a href="#collapsethis"><p>Back to Top</p></a>
               </section>
               <section id="foot1" class="col-md-4">
-               
+
                       <span class="h5">Get to know us</span> <br> <br>
                       <ul>
                           <a href="https://www.blogger.com/about/"><li>Blogs</li></a>
@@ -308,19 +356,19 @@
                           <a href="https://aws.amazon.com/"><li>Services</li></a>
                           <a href="https://sellercentral.amazon.in/gp/help/external/G200444420?language=en_IN"><li>Report issues</li></a>
                       </ul>
-                  
+
                   <hr class="d-md-none m-auto">
               </section>
               <section id="foot2" class="col-md-5">
-              
+
                   <span class="h5 "> Main Address</span> <br>
                   <p class="mt-4">Eiffel Tower, Paris <br>
                       France <br>
-                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni unde, quis ab a iust fugiat.</p>  
+                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni unde, quis ab a iust fugiat.</p>
                   <hr class="d-md-none m-auto">
               </section>
               <section id="foot1" class="col-md-3 ps-5">
-               
+
                   <span class="h5">Connect with us</span> <br> <br>
                   <ul>
                       <a href=""><li>
@@ -330,18 +378,18 @@
                       <a href=""><li>
                           <img src="./assets/facebook.png" alt="" height="25px" width="25px"> Facebook</li></a>
                   </ul>
-              
+
               <hr class="d-md-none m-auto">
           </section>
-              
+
           </div>
           <div class="text-center mt-5">
-              <p>&copy; Certified Store</p> 
+              <p>&copy; Certified Store</p>
               <p>Powered by Team 2</p>
            </div>
         </div>
     </div>
-      
+
   </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
