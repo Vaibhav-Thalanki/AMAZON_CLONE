@@ -109,11 +109,10 @@ a.nav-link:hover {
 
 /*  puffyfish edits */
 .body-categories {
-height: inherit;
 padding: 40px 0px;
 display: grid;
-gap: 30px 30px;
-grid-template-columns: auto auto auto auto;
+gap: 1em;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .ind-category {
@@ -139,7 +138,7 @@ grid-template-columns: auto auto auto auto;
 
 .horizontal-scroll {
   padding: 40px 20px;
-  background-color: grey;
+  background-color: inherit;
   margin: 40px 0;
   max-width: 100%;
 }
@@ -150,9 +149,43 @@ grid-template-columns: auto auto auto auto;
 }
 
 .image-container {
-  max-width: 100%;
   display: flex;
+  height: 300px;
+  padding: 30px;
+  column-gap: 40px;
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  user-select: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  transform: scale(0.98);
+  will-change: transform;
+  position: relative;
+  background: rgba(255,255,255,0.1);
 }
+
+.image-container.active {
+  background: rgba(255,255,255,0.3);
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+  transform: scale(1);
+}
+
+.image-container img {
+  object-fit: cover;
+  width: 300px;
+  height: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(0,0,0,0.15);
+  box-shadow: inset 0 0 0 10px rgba(0,0,0,0.15);
+}
+
+.image-container img:nth-child(even) { transform: scaleX(1.31) rotateY(40deg); }
+.image-container img:nth-child(odd) { transform: scaleX(1.31) rotateY(-40deg); }
 
 /* end of puffyfish edits */
 
