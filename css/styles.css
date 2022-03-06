@@ -252,3 +252,17 @@ ul li,
 ul a {
   margin-bottom: 15px;
 }
+/* CART PAGE */
+.cart-page{
+  padding: 187px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 900px;
+  height: 100%;
+}
+.cart-message{
+  font-weight:bolder;
+  font-size: 30px;
+}
