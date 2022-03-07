@@ -18,9 +18,9 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+      <nav class="navbar navbar-expand-lg navbar-dark ">
         <div class="container-lg">
-          <a href="category.html" class="navbar-brand">
+          <a href="./homepage.html" class="navbar-brand">
             <img src="./assets/logo.png" alt="" height="100" width="100" />
             <span class="ms-3 fw-bold ">SHOP</span>
           </a>
@@ -41,26 +41,29 @@
               <li class="nav-item">
                 <a href="#" class="nav-link active">HOME</a>
               </li>
+              
               <li class="nav-item">
-        <!-- edited, added collapse navbar-collapse to a.
-              added ul and li with class nav-item -->
-                <a href="#" class="nav-link main-category">CATEGORIES</a>
-                <div id="hiddenCollapse">
-                    <a href="#" class="hidden-category">Arts and Crafts</a>
-                    <a href="#" class="hidden-category">Automotive</a>
-                    <a href="#" class="hidden-category">Baby</a>
-                    <a href="#" class="hidden-category">Beauty and Personal Care</a>
-                    <a href="#" class="hidden-category">Books</a>
-                    <a href="#" class="hidden-category">Electronics</a>
-                    <a href="#" class="hidden-category">Home and Kitchen</a>
-                    <a href="#" class="hidden-category">Women's Fashion</a>
-                    <a href="#" class="hidden-category">Men's Fashion</a>
-                    <a href="#" class="hidden-category">Children's Fashion</a>
-                    <a href="#" class="hidden-category">Music, CDs and Vinyl</a>
-              </div></li>
-
-        <!-- edits end here -->
+                <div class="dropdown">
+                  <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    CATEGORIES
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a href="./category.html" class="dropdown-item">Arts and Crafts</a></li>
+                    <li><a href="./category.html" class="dropdown-item">Automotive</a></li>
+                    <li><a href="./category.html" class="dropdown-item">Baby</a></li>
+                    <li><a href="./category.html" class="dropdown-item">Beauty and Personal Care</a></li>
+                    <li><a href="./category.html" class="dropdown-item">Books</a></li>
+                    <li><a href="./category.html" class="dropdown-item">Electronics</a></li>
+                    <li><a href="./category.html" class="dropdown-item">Home and Kitchen</a></li>
+                    <li><a href="./category.html" class="dropdown-item">Women's Fashion</a></li>
+                    <li><a href="./category.html" class="dropdown-item">Men's Fashion</a></li>
+                    <li><a href="./category.html" class="dropdown-item">Children's Fashion</a></li>
+                    <li><a href="./category.html" class="dropdown-item">Music, CDs and Vinyl</a></li>
+                  </ul>
+                </div>
               </li>
+              
+              
               <li class="nav-item">
                 <a href="#" class="nav-link"><i class="fa fa-cart-plus"></i> CART</a>
               </li>
@@ -319,9 +322,9 @@ END -->
 <!-- END OF FOUR COLUMNS GALLERY -->
 
 <!-- HORIZONTAL SCROLL  -------->
-        <div class="horizontal-scroll" id="books">
+        <div class="horizontal-scroll d-none d-md-block" id="books">
           <h3>Top Sellers in Baby Products for you</h3>
-          <div class="image-container">
+          <div class="image-container ">
             <img src="" alt="" />
             <img src="" alt="" />
             <img src="" alt="" />
@@ -396,5 +399,6 @@ END -->
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    
   </body>
 </html>

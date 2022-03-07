@@ -8,6 +8,15 @@ a.active {
   font-size: 1.3em;
 }
 /* NAVBAR  */
+header {
+  background-color: #560bad;
+}
+.dropdown > a {
+  background-color: #560bad;
+}
+.dropdown > a:hover {
+  color: white;
+}
 .navbar-brand span {
   font-size: 1.5em;
   font-family: cursive;
@@ -26,10 +35,11 @@ a.active {
   align-items: center;
 }
 #search-bar-out {
-  background-color: #cccccc;
+  background-color: #7209b7;
   text-align: center;
 }
 #search-bar-out span {
+  color: white;
   text-align: left;
   float: left;
   font-size: 0.8em;
@@ -39,6 +49,7 @@ a.active {
   object-fit: contain;
 }
 #search-bar-out p {
+  color: white;
   padding-top: 5px;
   display: inline-block;
 }
@@ -57,22 +68,14 @@ a.nav-link:hover {
   min-width: 158px;
   z-index: 1;
 }
-
-
-/*  ---- code to collapse category submenu, not working
-.main-category:hover #hiddenCollapse {
-  display: block !important;
+.dropdown a {
+  color: white;
+  text-decoration: none;
+}
+.dropdown ul li a {
+  color: black;
 }
 
-#hiddenCollapse a:hover {
-  background-color: #000 !important;
-  color: #fff !important;
-}
-
-#collapsethis: hover .main-category {
-  background-color: transparent;
-}
- */
 /* HOME PAGE  */
 .home-tile a,
 .home-tile a:hover {
@@ -109,11 +112,11 @@ a.nav-link:hover {
 
 /*  puffyfish edits */
 .body-categories {
-height: inherit;
-padding: 40px 0px;
-display: grid;
-gap: 30px 30px;
-grid-template-columns: auto auto auto auto;
+  height: inherit;
+  padding: 40px 0px;
+  display: grid;
+  gap: 30px 30px;
+  grid-template-columns: auto auto auto auto;
 }
 
 .ind-category {
@@ -130,7 +133,7 @@ grid-template-columns: auto auto auto auto;
 .ind-category a {
   font-size: 0.7rem;
   text-decoration: none;
-  color: #F72585;
+  color: #f72585;
 }
 
 .category-body {
@@ -194,7 +197,7 @@ a:hover {
 }
 
 #home-footer {
-  background-color: #222;
+  background-color: #560bad;
   color: white;
   position: relative;
   padding-top: 75px;
@@ -204,12 +207,12 @@ a:hover {
   position: absolute;
   top: 0;
   right: 0;
-  background-color: rgb(82, 80, 80);
+  background-color: #7209b7;
   text-align: center;
 }
 #backtotop:hover {
   font-size: 1.3em;
-  background-color: #cccccc;
+  background-color: #7209b7;
   color: #000;
 }
 ul {
@@ -218,4 +221,24 @@ ul {
 ul li,
 ul a {
   margin-bottom: 15px;
+}
+/* Product Page */
+.img {
+  height: 100%;
+  padding: 0;
+  justify-self: center;
+}
+.img img {
+  object-fit: cover;
+  height: 200px;
+  object-position: center;
+  width: 100%;
+}
+.prod-tile {
+  background-color: #b5179e;
+  color: white;
+  margin-bottom: 20px;
+}
+.prod-tile span {
+  font-size: 1.5em;
 }
