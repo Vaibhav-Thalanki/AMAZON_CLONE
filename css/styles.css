@@ -119,7 +119,10 @@ a.nav-link:hover {
 }
 
 .ind-category {
-  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 350px;
   padding: 20px;
   background-color: lightblue;
 }
@@ -132,11 +135,19 @@ a.nav-link:hover {
 .ind-category a {
   font-size: 0.7rem;
   text-decoration: none;
-  color: #f72585;
+  color: #F72585;
 }
 
 .category-body {
   height: 220px;
+  position: relative;
+  margin: auto;
+}
+
+.category-body img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
 }
 
 .horizontal-scroll {
@@ -166,6 +177,7 @@ a.nav-link:hover {
   transform: scale(0.98);
   will-change: transform;
   position: relative;
+  perspective: 500px;
   background: rgba(255, 255, 255, 0.1);
 }
 
@@ -183,15 +195,8 @@ a.nav-link:hover {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: rgba(0, 0, 0, 0.15);
+  color: rgba(0,0,0,0.15);
   box-shadow: inset 0 0 0 10px rgba(0, 0, 0, 0.15);
-}
-
-.image-container img:nth-child(even) {
-  transform: scaleX(1.31) rotateY(40deg);
-}
-.image-container img:nth-child(odd) {
-  transform: scaleX(1.31) rotateY(-40deg);
 }
 
 /* end of puffyfish edits */
