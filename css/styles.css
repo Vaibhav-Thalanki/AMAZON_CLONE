@@ -30,6 +30,7 @@ header {
 .nav-item a {
   margin: 0;
 }
+
 #search-bar {
   position: relative;
   align-items: center;
@@ -111,11 +112,12 @@ a.nav-link:hover {
 }
 
 /*  puffyfish edits */
+/*  LALA edits */
 .body-categories {
   padding: 40px 0px;
   display: grid;
   gap: 1em;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
 .ind-category {
@@ -162,33 +164,36 @@ a.nav-link:hover {
   font-weight: bold;
 }
 
-.image-container {
+#imageContainer {
   display: flex;
   height: 300px;
   padding: 30px;
   column-gap: 40px;
   width: 100%;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
-  user-select: none;
-  cursor: pointer;
-  transition: all 0.2s;
-  transform: scale(0.98);
-  will-change: transform;
-  position: relative;
-  perspective: 500px;
-  background: rgba(255, 255, 255, 0.1);
+    border: 1px solid white;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    user-select: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    transform: scale(0.98);
+    will-change: transform;
+    position: relative;
+    background: rgba(255,255,255,0.1);
+    font-size: 0;
+    perspective: 500px;
+
 }
 
-.image-container.active {
-  background: rgba(255, 255, 255, 0.3);
+#imageContainer.active {
+  background: rgba(255,255,255,0.3);
   cursor: grabbing;
   cursor: -webkit-grabbing;
   transform: scale(1);
 }
 
-.image-container img {
+#imageContainer img {
   object-fit: cover;
   width: 300px;
   height: auto;
@@ -199,7 +204,7 @@ a.nav-link:hover {
   box-shadow: inset 0 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
-/* end of puffyfish edits */
+/* end of LALA edits */
 
 /* CATEGORY PAGE */
 .cat-tile {
