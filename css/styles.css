@@ -38,6 +38,7 @@ header {
 #search-bar-out {
   background-color: #7209b7;
   text-align: center;
+  height: 50px;
 }
 #search-bar-out span {
   color: white;
@@ -50,8 +51,9 @@ header {
   object-fit: contain;
 }
 #search-bar-out p {
+  font-size: 0.8em;
   color: white;
-  padding-top: 5px;
+  /* padding-top: 5px; if this is deleted, it will center the text*/
   display: inline-block;
 }
 #mainContent {
@@ -135,9 +137,10 @@ a.nav-link:hover {
 }
 
 .ind-category a {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
+  font-weight: 500;
   text-decoration: none;
-  color: #F72585;
+  color: #3F37C9;
 }
 
 .category-body {
@@ -153,10 +156,14 @@ a.nav-link:hover {
 }
 
 .horizontal-scroll {
-  padding: 40px 20px;
+  padding: 20px 0px 0px 0px;
   background-color: inherit;
-  margin: 40px 0;
+  margin-top: 100px;
   max-width: 100%;
+}
+
+.horizontal-scroll:last-child {
+  margin-bottom: 80px;
 }
 
 .horizontal-scroll h3 {
@@ -164,7 +171,7 @@ a.nav-link:hover {
   font-weight: bold;
 }
 
-#imageContainer {
+.image-container {
   display: flex;
   height: 300px;
   padding: 30px;
@@ -186,14 +193,14 @@ a.nav-link:hover {
 
 }
 
-#imageContainer.active {
+.image-container.active {
   background: rgba(255,255,255,0.3);
   cursor: grabbing;
   cursor: -webkit-grabbing;
   transform: scale(1);
 }
 
-#imageContainer img {
+.image-container img{
   object-fit: cover;
   width: 300px;
   height: auto;
@@ -202,6 +209,10 @@ a.nav-link:hover {
   justify-content: center;
   color: rgba(0,0,0,0.15);
   box-shadow: inset 0 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.image-container:last-child {
+  margin-bottom: 100px;
 }
 
 /* end of LALA edits */

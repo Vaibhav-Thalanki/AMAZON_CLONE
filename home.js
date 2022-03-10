@@ -1,14 +1,15 @@
-  var slider = document.querySelector("#imageContainer");
+const sliders = document.querySelectorAll(".image-container");
   let isDown = false;
   let startX;
   let scrollLeft;
 
-  slider.addEventListener('mousedown', (e) => {
-    isDown = true;
-    slider.classList.add('active');
-    startX = e.pageX - slider.offsetLeft;
-    scrollLeft = slider.scrollLeft;
-  });
+for (let slider of sliders) {
+    slider.addEventListener('mousedown', (e) => {
+      isDown = true;
+      slider.classList.add('active');
+      startX = e.pageX - slider.offsetLeft;
+      scrollLeft = slider.scrollLeft;
+    });
 
   slider.addEventListener('mouseleave', () => {
     isDown = false;
@@ -27,3 +28,4 @@
     const walk = (x - startX) * 3;
     slider.scrollLeft = scrollLeft - walk;
   });
+}
