@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Product XYZ</title>
+    <script src="https://use.fontawesome.com/7fd8f92be1.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark ">
+        <div class="container-lg">
+          <a href="./homepage.html" class="navbar-brand">
+            <img src="./assets/logo.png" alt="" height="100" width="100" />
+            <span class="ms-3 fw-bold ">SHOP</span>
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-target="#collapsethis"
+            data-bs-toggle="collapse"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="collapsethis"
+          >
+            <ul class="navbar-nav align-items-center">
+              <li class="nav-item">
+                <a href="#" class="nav-link active">HOME</a>
+              </li>
+
+              <li class="nav-item">
+                <div class="dropdown">
+                  <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    CATEGORIES
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a href="./category.html" class="dropdown-item">Arts and Crafts</a></li>
+                    <li><a href="./category.html" class="dropdown-item">Automotive</a></li>
+                    <li><a href="./category.html" class="dropdown-item">Baby</a></li>
+                    <li><a href="./category.html" class="dropdown-item">Beauty and Personal Care</a></li>
+                    <li><a href="./category.html" class="dropdown-item">Books</a></li>
+                    <li><a href="./category.html" class="dropdown-item">Electronics</a></li>
+                    <li><a href="./category.html" class="dropdown-item">Home and Kitchen</a></li>
+                    <li><a href="./category.html" class="dropdown-item">Women's Fashion</a></li>
+                    <li><a href="./category.html" class="dropdown-item">Men's Fashion</a></li>
+                    <li><a href="./category.html" class="dropdown-item">Children's Fashion</a></li>
+                    <li><a href="./category.html" class="dropdown-item">Music, CDs and Vinyl</a></li>
+                  </ul>
+                </div>
+              </li>
+
+
+              <li class="nav-item">
+                <a href="./cart.html" class="nav-link"><i class="fa fa-cart-plus"></i> CART</a>
+              </li>
+              <li class="d-none d-lg-block nav-item" id="search-bar">
+
+                <input type="text" name="" value="" placeholder="Search.."/>
+                <button type="button" name="button"><img src="./assets/search.png" alt="" height="20px" width="20px"/></button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="py-3 container-fluid d-none d-lg-block text-end align-items-center " id="search-bar-out">
+        <span>Powered by Team 2</span>
+        <img src="./assets/location.png" alt="" height="20px"/>
+        <p id="out2">Deliver to <b>Slovakia</b></p>
+      </div>
+    </header>
+    <!-- CONTENT HERE -->
+<div class="specific-product-container">
+<div class="product-holder">
+  <div class="photo">
+  <img src="./assets/accessories.jpg" alt="">
+  </div>
+  <div class="photoGallery">
+  <img src="./assets/accessories.jpg" alt="">
+  <img src="./assets/accessories.jpg" alt="">
+  <img src="./assets/accessories.jpg" alt="">
+  <img src="./assets/accessories.jpg" alt="">
+  </div>
+</div>
+
+<div class="product-info">
+  <h2>Asus Vivobook laptop</h2>
+  <div class="specs">
+
+  </div>
+  <div class="about-info">
+    <h2>About this item</h2>
+<ul>
+<li>24" Ultra slim profile</li>
+<li>Contemporary sleek metallic design</li>
+<li>Slim bezel with thin chassis. Power Range (V, A, Hz)- AC-DC Adapter Input 100 – 240 VAC, 50/60 Hz, 1.0A (Max.) Output - 12V DC, 2.5A. Power Consumption (Typical)- 25.4W. Neck/Stand Detachable: Yes</li>
+<li>2 x HDMI Ports (convertible to DVI).Contrast Ratio:1000 : 1</li>
+<li>VESA wall mount ready. HDMI Input Signal Support - 1920 x 1080 @ 75Hz, 1080/60p, 1080/60i, 720p, 480p, 480i, Built-in Speakers - 2 x 2W 8 Ohm.Mounting type: VESA Hole Pattern 100mm x 100mm</li>
+</ul>
+<br>
+<a href="./assets/product.html">Compare with similar items</a>
+  </div>
+</div>
+
+  <div class="priceContainer">
+    <p id="price-amount">$139.97</p>
+    <p>No Import Fees Deposit & 37.45 Shipping to Slovakia</p>
+
+    <p><b>Delivery March 24-28<b></p>
+      <br>
+      <br>
+    <p>In Stock</p>
+      <div class="btn  dropdown-toggle" > <!-- this needs to be a dropdown for quantity-->
+      <button type="button" name="button">Qty: 1</button>
+      <ul class="dropdown-menu">
+        <li class="dropdown-item">1</li>
+        <li class="dropdown-item">2</li>
+        <li class="dropdown-item">3</li>
+        <li class="dropdown-item">4</li>
+        <li class="dropdown-item">5</li>
+      </ul>
+    </div>
+    <button type="button" name="button" class="block-button">Add to Cart</button>
+    <button type="button" name="button" class="block-button">Buy now</button>
+    <p>Return policy: <a href="#">Eligible for Return, Refund or Replacement</a> </p>
+<div class="add-items">
+    <p><b>Add other items:</b></p>
+    <div class="">
+    <label><input type="checkbox" class="input-checkbox" />Additional 1 Year Warranty</label><br>
+    <label><input type="checkbox" class="input-checkbox" />Asus Super Mouse</label><br>
+    <label><input type="checkbox" class="input-checkbox" />Asus Headset</label><br>
+    <label><input type="checkbox" class="input-checkbox" />Microsoft 365</label>
+    </div>
+    </div>
+  </div>
+</div>
+<!-- related products -->
+
+<div class="related-product-container">
+<h2>Products related to this item</h2>
+<div class="related-products">
+  <img src="./assets/computer.jpg" alt="">
+    <img src="./assets/keyboard.jpg" alt="">
+    <img src="./assets/computer.jpg" alt="">
+    <img src="./assets/keyboard.jpg" alt="">
+    <img src="./assets/computer.jpg" alt="">
+    <img src="./assets/keyboard.jpg" alt="">
+    <img src="./assets/computer.jpg" alt="">
+    <img src="./assets/keyboard.jpg" alt="">
+    <img src="./assets/computer.jpg" alt="">
+    <img src="./assets/keyboard.jpg" alt="">
+</div>
+</div>
+
+    <!-- CONTENT ENDS HERE -->
+<footer class="m-0 pb-3" id="home-footer">
+      <div class="container">
+          <div class="row">
+              <section class="col-12" id="backtotop">
+                  <a href="#collapsethis"><p>Back to Top</p></a>
+              </section>
+              <section id="foot1" class="col-md-4">
+
+                      <span class="h5">Get to know us</span> <br> <br>
+                      <ul>
+                          <a href="https://www.blogger.com/about/"><li>Blogs</li></a>
+                          <a href="https://www.aboutamazon.com/?utm_source=gateway&utm_medium=footer"><li>About</li></a>
+                          <a href="https://www.amazon.in/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM"><li>Terms and Conditions</li></a>
+                          <a href="https://aws.amazon.com/"><li>Services</li></a>
+                          <a href="https://sellercentral.amazon.in/gp/help/external/G200444420?language=en_IN"><li>Report issues</li></a>
+                      </ul>
+
+                  <hr class="d-md-none m-auto">
+              </section>
+              <section id="foot2" class="col-md-5">
+
+                  <span class="h5 "> Main Address</span> <br>
+                  <p class="mt-4">Eiffel Tower, Paris <br>
+                      France <br>
+                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni unde, quis ab a iust fugiat.</p>
+                  <hr class="d-md-none m-auto">
+              </section>
+              <section id="foot1" class="col-md-3 ps-5">
+
+                  <span class="h5">Connect with us</span> <br> <br>
+                  <ul>
+                      <a href=""><li>
+                          <img src="./assets/insta.png" alt="" height="20px" width="20px"> Instagram</li></a>
+                      <a href=""><li>
+                          <img src="./assets/twitter.png" alt="" height="25px" width="25px" > Twitter</li></a>
+                      <a href=""><li>
+                          <img src="./assets/facebook.png" alt="" height="25px" width="25px"> Facebook</li></a>
+                  </ul>
+
+              <hr class="d-md-none m-auto">
+          </section>
+
+          </div>
+          <div class="text-center mt-5">
+              <p>&copy; Certified Store</p>
+              <p>Powered by Team 2</p>
+           </div>
+        </div>
+
+  </footer>
+  <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    >
+  </script>
+  <script src="home.js"></script>
+  </body>
+</html>

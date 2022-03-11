@@ -114,7 +114,6 @@ a.nav-link:hover {
 }
 
 /*  puffyfish edits */
-/*  LALA edits */
 .body-categories {
   padding: 40px 0px;
   display: grid;
@@ -214,8 +213,62 @@ a.nav-link:hover {
 .image-container:last-child {
   margin-bottom: 100px;
 }
+/* specific-product styles */
+.specific-product-container {
+  padding: 50px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 2fr 1fr 1fr;
+}
 
-/* end of LALA edits */
+.photo img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.photoGallery {
+  display: flex;
+  flex-direction: row;
+  margin: 40px auto;
+}
+
+.photoGallery img{
+  margin-right: 10px;
+  width: 20%;
+  height: auto;
+  object-fit: cover;
+}
+
+.priceContainer {
+  border-radius: 10px;
+  border: 1px solid #600c54;
+  padding: 5px;
+}
+
+.related-products {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  margin-bottom: 80px;
+  /* flex-gap: 10px; */
+}
+
+.related-products img{
+  width: 20%;
+  height: auto;
+  object-fit: cover;
+}
+
+.block-button {
+  display: block;
+  width: 50%;
+  background-color: #B5179E;
+  border: 1px solid #600c54;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+/* end of Puffyfish edits */
 
 /* CATEGORY PAGE */
 .cat-tile {
