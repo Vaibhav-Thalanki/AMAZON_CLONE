@@ -133,7 +133,7 @@ a.nav-link:hover {
   color: #000;
 }
 /*  puffyfish edits */
-.body-categories {
+/* .body-categories {
   padding: 40px 0px;
   display: grid;
   gap: 1em;
@@ -171,7 +171,7 @@ a.nav-link:hover {
   object-fit: cover;
   width: 100%;
   height: auto;
-}
+} */
 
 .horizontal-scroll:last-child {
   margin-bottom: 80px;
@@ -198,7 +198,7 @@ a.nav-link:hover {
   transform: scale(0.98);
   will-change: transform;
   position: relative;
-  background: rgba(255, 255, 255, 0.1);
+  /* background: rgba(255, 255, 255, 0.1); i like it without background*/
   font-size: 0;
   perspective: 500px;
 }
@@ -226,6 +226,7 @@ a.nav-link:hover {
 }
 /* specific-product styles */
 .specific-product-container {
+  margin: 30px auto;
   padding: 50px;
   display: grid;
   grid-gap: 20px;
@@ -251,33 +252,94 @@ a.nav-link:hover {
   object-fit: cover;
 }
 
+.product-info h2{
+  padding-bottom: 3rem;
+  text-align: center;
+  border-bottom: 1px solid #F72585;
+}
+
+.about-info {
+    margin-top: 1.5rem;
+    border-bottom: 1px solid #F72585;
+}
+
+.about-info h3 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.about-info li {
+  font-size: 0.9rem;
+  list-style-type: disc;
+  margin: 0;
+}
+
 .priceContainer {
   border-radius: 10px;
-  border: 1px solid #600c54;
+  border: 1px solid #F72585;
   padding: 5px;
+}
+
+#price-amount {
+  color: #F72585;
+}
+
+.add-items label{
+  font-weight: normal;
+}
+.related-product-container {
+    margin-top: 30px;
+    padding: 50px;
 }
 
 .related-products {
   display: flex;
-  flex-direction: row;
-  overflow: hidden;
-  margin-bottom: 80px;
-  /* flex-gap: 10px; */
+  height: 350px;
+  padding: 30px;
+  column-gap: 40px;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  white-space: nowrap;
+  user-select: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  transform: scale(0.98);
+  will-change: transform;
+  position: relative;
+  margin-bottom: 30px;
 }
 
-.related-products img {
-  width: 20%;
+.sample {
+  width: 100%;
   height: auto;
   object-fit: cover;
 }
 
+figcaption {
+  padding: 1rem;
+  font-weight: 300;
+}
+
+.related-products span {
+    line-height: 30%;
+    font-size: 1rem;
+    display: block;
+    font-weight: normal;
+    color: #F72585;
+    text-align: center;
+}
+
 .block-button {
-  display: block;
-  width: 50%;
+  display: inline-block;
+  width: 60%;
+  color: white;
   background-color: #b5179e;
-  border: 1px solid #600c54;
-  border-radius: 5px;
+  border-radius: 15px;
   margin-top: 1rem;
+  border: none;
+  margin: 5px auto;
+  padding: 5px 10px;
 }
 /* end of Puffyfish edits */
 
@@ -429,6 +491,7 @@ ul a {
   .quantity-container input {
     margin-bottom: 10px;
   }
+
 }
 @media (max-width: 768px) {
   /* footer */
@@ -437,4 +500,11 @@ ul a {
   #foot3 {
     text-align: center;
   }
+  .specific-product-container {
+       display: flex;
+       flex-direction: column;
+       padding: 20px 5%;
+       align-items: center;
+       justify-content: center;
+     }
 }
