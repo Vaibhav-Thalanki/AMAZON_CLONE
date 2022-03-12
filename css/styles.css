@@ -384,8 +384,52 @@ ul a {
 .cart-message-2 {
   font-size: 1.3em;
 }
+.cart-item {
+  height: 100px;
+}
+.cart-item-img {
+  height: 100px;
+  text-align: center;
+}
+
+.cart-item-img img {
+  height: 100px;
+  object-fit: cover;
+}
+.price-container,
+.cart-item-desc {
+  position: relative;
+}
+.price,
+.item-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.quantity-container input {
+  margin-right: 10px;
+}
 
 /* Media Queries */
+@media (max-width: 576px) {
+  /*navbar*/
+  header {
+    font-size: 0.9em;
+  }
+  #mainContent {
+    font-size: 0.9em;
+  }
+  /* itemized cart*/
+  .cart-heading,
+  .cart-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  .quantity-container input {
+    margin-bottom: 10px;
+  }
+}
 @media (max-width: 768px) {
   /* footer */
   #foot1,
