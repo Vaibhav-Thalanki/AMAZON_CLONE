@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Cart Page</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
@@ -21,7 +21,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark">
           <div class="container-lg">
-            <a href="category.html" class="navbar-brand">
+            <a href="./homepage.html" class="navbar-brand">
               <img src="./assets/logo.png" alt="" height="100" width="100" />
               <span class="ms-3 fw-bold ">SHOP</span>
             </a>
@@ -40,13 +40,13 @@
             >
               <ul class="navbar-nav align-items-center">
                 <li class="nav-item">
-                  <a href="#" class="nav-link active">HOME</a>
+                  <a href="./homepage.html" class="nav-link active">HOME</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link ">CATEGORIES</a>
+                  <a href="./category.html" class="nav-link ">CATEGORIES</a>
                 </li>
                 <li class="nav-item">
-                  <a href="cart.html" class="nav-link">CART</a>
+                  <a href="./cart.html" class="nav-link">CART</a>
                 </li>
                 <li class="d-none d-lg-block nav-item" id="search-bar">
           
@@ -101,8 +101,9 @@
                   <button class="btn btn-danger">Remove</button>
                 </section>
               </div>
+              <hr>
             </div>
-            <hr>
+            
             <div class="col-12 cart-item my-3 container-fluid ">
               <div class="row cart-row">
                 <section class="col-2 d-none d-sm-block cart-item-img">
@@ -119,11 +120,12 @@
                   <button class="btn btn-danger">Remove</button>
                 </section>
               </div>
+              <hr>
             </div>
-            <hr>
+            
           </div>
-          <section class="col-8 text-end">
-            <p class=" h4">Total : </p>
+          <section class="col-10 mt-sm-3 text-end">
+            <p class=" h4">Total : <span class="total-price">$89.99</span></p>
           </section>
           
         </div>
@@ -180,4 +182,11 @@
         </div>
     
       </footer>
+      <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/cart.js"></script>
   </body>
+  </html>
