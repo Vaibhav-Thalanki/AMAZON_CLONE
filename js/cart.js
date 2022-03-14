@@ -1,3 +1,13 @@
+// START OF PUFFYFISH edits
+
+
+
+
+
+
+
+
+// END OF Puffyfish'S EDITS
 document.addEventListener("DOMContentLoaded", (event) => {
   let items = document.getElementsByClassName("cart-row");
 
