@@ -2,32 +2,32 @@ const carts = document.querySelectorAll(".addBtn");
 
 let products = [
   {
-    name: Asus Vivobook Laptop,
+    name: "Asus Vivobook Laptop",
     price: 890,
     inCart: 0
   },
   {
-    name: Asus White Laptop,
+    name: "Asus White Laptop",
     price: 699,
     inCart: 0
   },
   {
-    name: Asus Black Laptop,
+    name: "Asus Black Laptop",
     price: 799,
     inCart: 0
   },
   {
-    name: Asus Red Laptop,
+    name: "Asus Red Laptop",
     price: 899,
     inCart: 0
   },
   {
-    name: Asus Green Laptop,
+    name: "Asus Green Laptop",
     price: 999,
     inCart: 0
   },
   {
-    name: Asus Yellow Laptop,
+    name: "Asus Yellow Laptop",
     price: 900,
     inCart: 0
   }
@@ -35,7 +35,8 @@ let products = [
 
 for (let n = 0; n < carts.length; n++) {
    carts[n].addEventListener('click', ()=> {
-   cartNumbers();
+   cartNumbers(products[n]);
+   totalCost(products[n]);
 });
 }
 
@@ -66,17 +67,17 @@ function setItems(product) {
   cartItems = JSON.parse(cartItems);
 
   if(cartItems != null) {
-    if(cartItems[product.tag] == undefined) {
+    if(cartItems[product.name] == undefined) {
       cartItems = {
         ...cartItems,
-        [product.tag]:product
+        [product.name]:product
       }
     }
-    cartItems[product.tag].inCart += 1;
+    cartItems[product.name].inCart += 1;
   } else {
     product.inCart = 1;
     cartItems = {
-      [product.tag]:product
+      [product.name]:product
     }
   }
 
@@ -85,7 +86,7 @@ function setItems(product) {
 
 function totalCost(product) {
   let cartCost = localStorage.getItem('totalCost');
-  cartCost = parseInt(cartCost);
+  console.log("my cartCost is", cartCost);
 
   if (cartCost != null) {
     cartCost = parseInt(cartCost);
@@ -95,34 +96,34 @@ function totalCost(product) {
   }
 }
 
-function displayCart() {
-  let cartItems = localStorage.getItem("productsInCart");
-  cartItems = JSON.parse(cartItems);
-  let productContainer = document.querySelector(".products-container");
-  if(carItems && productContainer) {
-    productContainer.innerHTML = '';
-    Obect.values(cartItems).map(item => {
-      productContainer.innerHTML += `
-      <div class="product">
-      <ion-icon name="close-circle"></ion-icon>
-      <img src="./image/${item.tag}.jpg">
-      <span>${item.name}</span>
-      </div>
-      `
-    });
-  }
-}
-
-
-
-productContainer.innerHTML +=
-<div class = "basketTottalContainer">
-  <h4 class="basketTotalTitle">
-    Basket Total </h4>
-    <h4 class = "basketTotal"
-    $$(cartCost),00.</h4>
-    ;
-  }
+// function displayCart() {
+//   let cartItems = localStorage.getItem("productsInCart");
+//   cartItems = JSON.parse(cartItems);
+//   let productContainer = document.querySelector(".products-container");
+//   if(cartItems && productContainer) {
+//     productContainer.innerHTML = '';
+//     Obect.values(cartItems).map(item => {
+//       productContainer.innerHTML += `
+//       <div class="product">
+//       <ion-icon name="close-circle"></ion-icon>
+//       <img src="./image/${item.tag}.jpg">
+//       <span>${item.name}</span>
+//       </div>
+//       `
+//     });
+//   }
+// }
+//
+//
+//
+// // productContainer.innerHTML +=
+// // <div class="basketTotalContainer">
+// //   <h4 class="basketTotalTitle">
+// //     Basket Total </h4>
+// //     <h4 class = "basketTotal"
+// //     $$(cartCost),00.</h4>
+// //     ;
+// //   }
 
   onLoadCartNumbers ();
-  displayCart();
+  // displayCart();
