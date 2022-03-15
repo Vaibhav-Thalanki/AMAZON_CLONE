@@ -352,6 +352,76 @@ figcaption {
   cursor: pointer;
 }
 
+/* ITEMIZED CART PAGE */
+.products-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 650px;
+  padding-bottom: 100px;
+  justify-content: space-around;
+  margin: 50px auto 0;
+}
+
+.product-header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 auto;
+  border-bottom: 2px solid darkgrey;
+  margin-bottom: 30px;
+}
+
+.product-header h5 {
+  display: flex;
+  align-items: center;
+}
+
+.product-title {
+  width: 45%;
+}
+
+.cost {
+  width: 15%;
+}
+
+.total {
+  width: 10%;
+}
+
+.quantity {
+  width: 30%;
+}
+
+.products {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0 auto;
+  border-bottom: 2px solid darkgrey;
+  gap: 20px;
+  padding-bottom: 30px;
+}
+
+.products img {
+  width: 75px;
+}
+
+.basketTotalContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.basketTotalTitle {
+  width: 30%;
+}
+
+.basketTotal {
+  width: 10%;
+}
 /* end of Puffyfish edits */
 
 /* CATEGORY PAGE */
