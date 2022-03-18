@@ -12,7 +12,7 @@
 5. Seller (optional)
 </details>
 
-`Developed by **@Vaibhav-Thalanki**, **@Puffyfish**, **@DrecoJohnson**`
+`Developed by @Vaibhav-Thalanki, @Puffyfish, @DrecoJohnson`
 
 > **[Project problem statement](https://docs.google.com/document/d/1gQmq4HZvPNCfW4fFRkBY7vMvVlD9hOsc6ksHM2UyM4A/edit)**
 
